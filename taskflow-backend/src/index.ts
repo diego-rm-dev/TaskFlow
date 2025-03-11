@@ -1,4 +1,8 @@
+import { configDotenv } from 'dotenv';
 import express, { Application, Request, Response } from 'express';
+import './config/database/connection.config.js'
+
+configDotenv()
 
 const app: Application = express();
 
